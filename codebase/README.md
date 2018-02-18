@@ -1,3 +1,17 @@
+# Steps to get it up and running:
+--------------------
+```
+$ docker-compose up -d
+$ docker-compose exec php composer install
+$ docker-compose exec php drush cr
+```
+
+# To-do:
+--------------------
+- Copy existing settings files, so you dont have to run drupal install to init settings files.
+  Look in codebase/scripts/composer/ScriptHandler.php
+
+
 # Sequel Pro:
 --------------------
 localhost: 127.0.0.1
@@ -9,7 +23,6 @@ port: 3306
 # Database dump:
 --------------------
 doc exec mariadb sh -c 'exec mysqldump -uroot -ppassword drupal' > dump/drupal.sql
-
 
 
 
