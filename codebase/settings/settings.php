@@ -785,6 +785,13 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 }
 
 $config_directories['sync'] = '../config/sync';
+
+$settings['trusted_host_patterns'] = array(
+    '\.localhost$',
+    '\.local$',
+    '\.loc$',
+);
+
 $databases['default']['default'] = array (
   'database' => 'drupal',
   'username' => 'drupal',

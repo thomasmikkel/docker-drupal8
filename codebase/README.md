@@ -8,9 +8,7 @@ $ docker-compose exec php drush cr
 
 # To-do:
 --------------------
-- Copy existing settings files, so you dont have to run drupal install to init settings files.
-  Look in codebase/scripts/composer/ScriptHandler.php
-
+- brug drupal filer og database fra /sites/docker/test/docker4drupal og flet det ind i egen docker-kode-setup - så bør mailhog virke.
 
 # Sequel Pro:
 --------------------
